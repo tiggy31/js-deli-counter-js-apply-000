@@ -1,3 +1,12 @@
+
+
+function coffee(){
+  let i=0
+  i++
+  return `order number ${i} `
+}
+
+
 function takeANumber(currentLine, name){
   
   currentLine.push(name)
@@ -6,14 +15,15 @@ function takeANumber(currentLine, name){
 }
 
 function nowServing(katzDeliLine){
-  let newValue= ""
+ // let newValue= ""
   if(katzDeliLine.length===0){
     return "There is nobody waiting to be served!"
   }
   if ( katzDeliLine.length>=1){
-    newValue= katzDeliLine.shift()
-  }
+    let newValue= katzDeliLine.shift()
+  
   return `Currently serving ${newValue}.`
+  }
 }
 
 function currentLine(currentLine){
